@@ -75,8 +75,8 @@ async def check_sudo_list(client, callback_query: CallbackQuery):
             if user_id != OWNER_ID:
                 try:
                     user = await app.get_users(user_id)
-                    user_mention = user.mention if user else f"🎁 Sᴜᴅᴏ {count} ɪᴅ: {user_id}"
-                    caption += f"🎁 Sᴜᴅᴏ {count} » {user_mention}\n"
+                    user_mention = user.mention if user else f"🎁 ⫷ 𝐋𝐞𝐠𝐞𝐧𝐝 ⫸ {count} ɪᴅ: {user_id}"
+                    caption += f"🎁 ⫷ 𝐋𝐞𝐠𝐞𝐧𝐝 ⫸ {count} » {user_mention}\n"
                     button_text = f"๏ ᴠɪᴇᴡ sᴜᴅᴏ {count} ๏ "
                     keyboard.append([InlineKeyboardButton(button_text, url=f"tg://openmessage?user_id={user_id}")]
                     )
